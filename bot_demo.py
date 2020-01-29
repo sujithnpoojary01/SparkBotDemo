@@ -54,10 +54,10 @@ def index(request):
             else:
                 msg = "The Batcave is silent..."
         elif 'batsignal' in in_message:
-            print "NANA NANA NANA NANA"
+            print ("NANA NANA NANA NANA")
             sendSparkPOST("https://api.ciscospark.com/v1/messages", {"roomId": webhook['data']['roomId'], "files": bat_signal})
         if msg != None:
-            print msg
+            print (msg)
             sendSparkPOST("https://api.ciscospark.com/v1/messages", {"roomId": webhook['data']['roomId'], "text": msg})
     return "true"
 
