@@ -63,8 +63,8 @@ def index(request):
     return "true"
 
 ####CHANGE THESE VALUES#####
-bot_email = "yourbot@sparkbot.io"
-bot_name = "yourBotDisplayName"
-bearer = "BOT BEARER TOKEN HERE"
+bot_email = "botreminder@webex.bot"
+bot_name = "BotReminder"
+bearer = "NTU5M2Y1MjktYzQ1ZC00MjhkLTk0MTktYTYxNjc0YTcwYzM3N2E0OTMxZGQtYWE3_PF84_6121c98f-64c5-48a2-95f7-6e1f074ad37f"
 bat_signal  = "https://upload.wikimedia.org/wikipedia/en/c/c6/Bat-signal_1989_film.jpg"
-run_itty(server='wsgiref', host='0.0.0.0', port=10010)
+run_itty(server='wsgiref', host='127.0.0.1', port=3000)
