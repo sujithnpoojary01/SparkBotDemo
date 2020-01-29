@@ -1,1 +1,1 @@
-web: python parrotheroku.py
+web: python bot_demo.py
