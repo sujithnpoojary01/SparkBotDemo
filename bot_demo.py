@@ -39,7 +39,6 @@ def index(request):
     /batsignal - replies to the room with an image
     """
     webhook = json.loads(request.body)
-    print webhook['data']['id']
     result = sendSparkGET('https://api.ciscospark.com/v1/messages/{0}'.format(webhook['data']['id']))
     result = json.loads(result)
     msg = None
